@@ -6,8 +6,9 @@ while True:
 		print('login_successful')
 		break
 	elif password != 'a123456':
-		
-		while i < 3:
+		while i < 3 :
+			i = i + 1
 			print('login fail please try again', i) 
-		i = i + 1
-		
+			if i == 3:
+				print('login fial')
+			break
